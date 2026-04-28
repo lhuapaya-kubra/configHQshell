@@ -1,0 +1,194 @@
+.sftp-page {
+  --navy: #002d42;
+  --teal: #0086b3;
+  --page-bg: #f4f7f9;
+}
+
+.sftp-page__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.sftp-page__title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--navy);
+  letter-spacing: -0.02em;
+}
+
+.sftp-page__create-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  font-family: inherit;
+  color: #fff;
+  background: var(--teal);
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px color-mix(in srgb, var(--teal) 35%, transparent);
+}
+
+.sftp-page__create-btn:hover {
+  filter: brightness(1.06);
+}
+
+.sftp-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgb(0 45 66 / 8%);
+  padding: 1rem 1rem 0;
+}
+
+.sftp-card__toolbar {
+  margin-bottom: 1rem;
+}
+
+.sftp-card__search-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  max-width: 28rem;
+  padding: 0.5rem 0.85rem;
+  border: 1px solid color-mix(in srgb, var(--navy) 14%, transparent);
+  border-radius: 8px;
+}
+
+.sftp-card__search-icon {
+  flex-shrink: 0;
+  color: color-mix(in srgb, var(--navy) 45%, transparent);
+}
+
+.sftp-card__search {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  outline: none;
+  font-size: 0.875rem;
+  font-family: inherit;
+  background: transparent;
+}
+
+.sftp-card__search::placeholder {
+  color: #94a3b8;
+}
+
+.sftp-card__table-wrap {
+  overflow: auto;
+  margin: 0 -1rem;
+  padding: 0 1rem 1rem;
+}
+
+.sftp-card__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8125rem;
+}
+
+.sftp-card__table thead {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.sftp-card__table th {
+  text-align: left;
+  padding: 0.6rem 0.5rem;
+  font-weight: 600;
+  color: #64748b;
+  background: #f1f5f9;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.sftp-card__table td {
+  padding: 0.75rem 0.5rem;
+  vertical-align: middle;
+  border-bottom: 1px solid #e8eef2;
+  color: var(--navy);
+}
+
+.sftp-card__name-btn {
+  padding: 0;
+  font: inherit;
+  font-weight: 700;
+  color: var(--teal);
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.sftp-card__name-btn:hover {
+  color: var(--navy);
+}
+
+.sftp-card__realm {
+  display: inline-block;
+  padding: 0.2rem 0.55rem;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+}
+
+.sftp-card__realm--live {
+  color: #0f766e;
+  background: #ccfbf1;
+}
+
+.sftp-card__realm--sandbox {
+  color: #1d4ed8;
+  background: #dbeafe;
+}
+
+.sftp-card__status {
+  font-weight: 600;
+  font-size: 0.8125rem;
+}
+
+.sftp-card__status--active {
+  color: #15803d;
+}
+
+.sftp-card__status--provisioning {
+  color: #b45309;
+}
+
+.sftp-card__status--paused {
+  color: #64748b;
+}
+
+.sftp-card__storage {
+  color: #64748b;
+  font-variant-numeric: tabular-nums;
+}
+
+.sftp-card__empty {
+  margin: 0;
+  padding: 1.5rem 0;
+  text-align: center;
+  color: #64748b;
+  font-size: 0.875rem;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
